@@ -16,11 +16,11 @@ def bmi_status(bmi):
     """
     if bmi < 18.5:
         return "Niedowaga"
-    elif 18.5 <= bmi and bmi >= 25:
+    elif 18.5 <= bmi < 25:
         return "Norma"
-    elif 25 > bmi and bmi <= 30:
+    elif 25 <= bmi < 30:
         return "Nadwaga"
-    elif bmi > 30:
+    else:
         return "Otylosc"
 
 
