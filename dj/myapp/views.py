@@ -15,5 +15,5 @@ def about(request):
 
 
 def death_time(request):
-    result = datetime.now() + timedelta(days=10)
+    result = datetime.now() + timedelta(years=10)
     return HttpResponse(f"Umrzemy - {result}")
