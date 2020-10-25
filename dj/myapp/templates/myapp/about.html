@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+Strona o autorach
+{% endblock %}
+
+{% block content %}
+<h1>To jest strona Adama</h1>
+<br><strong>Dostępni użytkownicy</strong>
+<br>
+<h2>
+    <ul>
+        {% for person in persons %}
+            <li>{{ person.name }} o masie: {{ person.mass }} potrzebuje {{ person.calculate_calories }} kcal
+            <br>O wzorscie {{ person.height }} w wieku {{ person.age }}</li>
+        {% endfor %}
+    </ul>
+</h2>
+
+{% endblock %}

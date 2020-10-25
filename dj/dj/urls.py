@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('view_1_url/', view_1),
     path('', default),
-    path('About', about),
-    path('Kiedy_umrzemy', death_time),
+    path('about', about),
+    path('death', death_time),
 ]
